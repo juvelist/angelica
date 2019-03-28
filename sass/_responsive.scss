@@ -1,0 +1,187 @@
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+    .banner__brand {
+        font-size: 120px;
+    }
+
+    .services,
+    .contacts,
+    .about,
+    .gallery {
+        &__header {
+            font-size: 42px;
+            margin-bottom: 40px;
+            padding-top: 40px;
+        }
+    }
+
+    .services__text,
+    .contacts__text {
+        font-size: 20px;
+    }
+
+    .map {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        &__header,
+        &__brand {
+            margin-bottom: 20px;
+        }
+
+        &__brand {
+            font-size: 92px;
+        }
+
+        &__text {
+            font-size: 28px;
+        }
+    }
+
+    .header__toggler_button:focus {
+        outline: none;
+    }
+
+    .navigation {
+        &__block {
+            background-color: $colorWhite;
+            left: 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 115px;
+            z-index: 100;
+        }
+
+        &__item {
+            & {
+                margin-bottom: 10px;
+            }
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+    }
+
+    .services__icon {
+        &_strizhki:before {
+            opacity: 0;
+        }
+
+        &_strizhki:after {
+            opacity: 1;
+        }
+
+        &_kosmetologia:before {
+            opacity: 0;
+        }
+
+        &_kosmetologia:after {
+            opacity: 1;
+        }
+
+        &_manikyur:before {
+            opacity: 0;
+        }
+
+        &_manikyur:after {
+            opacity: 1;
+        }
+
+        &_okrashivanie:before {
+            opacity: 0;
+        }
+
+        &_okrashivanie:after {
+            opacity: 1;
+        }
+
+        &_vizazh:before {
+            opacity: 0;
+        }
+
+        &_vizazh:after {
+            opacity: 1;
+        }
+
+        &_uxod:before {
+            opacity: 0;
+        }
+
+        &_uxod:after {
+            opacity: 1;
+        }
+    }
+
+    .services__text {
+        color: $colorPurple;
+    }
+
+    .contacts__icon {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .contacts-new,
+    .about,
+    .services {
+        &__header {
+            padding-top: 110px;
+        }
+    }
+
+    .map {
+        height: 360px;
+    }
+
+    .about__text {
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .banner {
+        &__header {
+            font-size: 36px;
+        }
+        &__brand {
+            font-size: 48px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    .services,
+    .contacts,
+    .about,
+    .gallery {
+        &__header {
+            font-size: 36px;
+            margin-bottom: 30px;
+            padding-top: 20px;
+        }
+    }
+
+    .contacts-new,
+    .about,
+    .services {
+        &__header {
+            padding-top: 110px;
+        }
+    }
+
+    .map {
+        height: 320px;
+    }
+}

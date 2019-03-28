@@ -1,0 +1,68 @@
+#slider-block  {
+    // dots
+    & .owl-dots .owl-dot span {
+        background-color: transparent;
+        border: 2px solid $colorWhite;
+        height: 15px;
+        width: 15px;
+    }
+
+    & .owl-dots .owl-dot.active span,
+    & .owl-dots .owl-dot:hover span {
+        background-color: $colorRed;
+        border-color: $colorWhite;
+    }
+
+    & .owl-dots .owl-dot:focus {
+        outline: none;
+    }
+
+    & .owl-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 10;
+    }
+
+    // slider
+    & .owl-nav {
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        width: 100%;
+        @include transform-translate(0, -50%);
+    }
+
+    & .owl-nav .owl-prev,
+    & .owl-nav .owl-next {
+        position: absolute;
+        display: inline-block;
+        color: $colorGrey;
+        font-size: 32px;
+        top: 50%;
+        @include transform-translate(0, -50%);
+        @include transition-mixin('color');
+    }
+
+    & .owl-nav .owl-prev,
+    & .owl-nav .owl-next {
+        &:hover {
+            color: $colorRed;
+            background-color: transparent;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    & .owl-nav .owl-prev {
+        left: 10px;
+    }
+
+    & .owl-nav .owl-next {
+        right: 10px;
+    }
+}

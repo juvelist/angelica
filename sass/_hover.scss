@@ -1,0 +1,144 @@
+@media only screen and (min-width: 768px) {
+    .services__header_link:hover {
+        color: $colorRed;
+    }
+
+    .services:hover {
+        & .services__icon {
+            &_strizhki:before {
+                opacity: 0;
+            }
+
+            &_strizhki:after {
+                opacity: 1;
+            }
+
+            &_kosmetologia:before {
+                opacity: 0;
+            }
+
+            &_kosmetologia:after {
+                opacity: 1;
+            }
+
+            &_manikyur:before {
+                opacity: 0;
+            }
+
+            &_manikyur:after {
+                opacity: 1;
+            }
+
+            &_okrashivanie:before {
+                opacity: 0;
+            }
+
+            &_okrashivanie:after {
+                opacity: 1;
+            }
+
+            &_vizazh:before {
+                opacity: 0;
+            }
+
+            &_vizazh:after {
+                opacity: 1;
+            }
+
+            &_uxod:before {
+                opacity: 0;
+            }
+
+            &_uxod:after {
+                opacity: 1;
+            }
+        }
+
+        & .services__text {
+            color: $colorPurple;
+        }
+
+    }
+
+    .contacts__icon:hover {
+        animation: shake-down 1s ease-in-out both;
+    }
+
+    .gallery__header_link:hover,
+    .contacts__header_link:hover,
+    .contacts__icon:hover,
+    .contacts__tel:hover {
+        color: $colorDark;
+    }
+
+    .contacts-new {
+        &__header_link:hover,
+        &__icon:hover {
+            color: $colorRed;
+        }
+    }
+
+    .about {
+        &__header_link:hover {
+            color: $colorRed;
+        }
+    }
+
+    /*keyframes*/
+    // shake-down
+    @-webkit-keyframes shake-down {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+
+        33% {
+            transform: translate3d(0, 4px, 0);
+        }
+
+        66% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes shake-down {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+
+        33% {
+            transform: translate3d(0, 4px, 0);
+        }
+
+        66% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    // shake-down
+    @-webkit-keyframes shake-right {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+
+        33% {
+            transform: translate3d(4px, 0, 0);
+        }
+
+        66% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes shake-right {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+
+        33% {
+            transform: translate3d(4px, 0, 0);
+        }
+
+        66% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+}
