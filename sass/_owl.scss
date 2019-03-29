@@ -1,16 +1,15 @@
 #slider-block  {
     // dots
     & .owl-dots .owl-dot span {
-        background-color: transparent;
-        border: 2px solid $colorWhite;
-        height: 15px;
-        width: 15px;
+        background-color: $colorWhite;
+        height: 3px;
+        width: 18px;
+        @include transition-mixin('background-color');
     }
 
     & .owl-dots .owl-dot.active span,
     & .owl-dots .owl-dot:hover span {
         background-color: $colorRed;
-        border-color: $colorWhite;
     }
 
     & .owl-dots .owl-dot:focus {
@@ -19,7 +18,7 @@
 
     & .owl-dots {
         position: absolute;
-        bottom: 10px;
+        bottom: 6px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -59,10 +58,10 @@
     }
 
     & .owl-nav .owl-prev {
-        left: 10px;
+        left: 4px;
     }
 
     & .owl-nav .owl-next {
-        right: 10px;
+        right: 4px;
     }
 }

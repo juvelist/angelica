@@ -1,8 +1,4 @@
 @media only screen and (min-width: 768px) {
-    .services__header_link:hover {
-        color: $colorRed;
-    }
-
     .services:hover {
         & .services__icon {
             &_strizhki:before {
@@ -64,25 +60,11 @@
         animation: shake-down 1s ease-in-out both;
     }
 
-    .gallery__header_link:hover,
-    .contacts__header_link:hover,
     .contacts__icon:hover,
     .contacts__tel:hover {
         color: $colorDark;
     }
 
-    .contacts-new {
-        &__header_link:hover,
-        &__icon:hover {
-            color: $colorRed;
-        }
-    }
-
-    .about {
-        &__header_link:hover {
-            color: $colorRed;
-        }
-    }
 
     /*keyframes*/
     // shake-down

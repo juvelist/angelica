@@ -104,6 +104,9 @@ strong.italic {
         &.active,
         &:hover {
             color: $colorGrey;
+        }
+
+        &.active {
             cursor: default;
         }
     }
@@ -285,6 +288,10 @@ strong.italic {
         &_link {
             color: $colorGrey;
             @include transition-mixin('color');
+
+            &:hover {
+                color: $colorRed;
+            }
         }
     }
 
@@ -317,6 +324,10 @@ strong.italic {
         &_link {
             color: $colorWhite;
             @include transition-mixin('color');
+
+            &:hover {
+                color: $colorRed;
+            }
         }
     }
 
@@ -334,6 +345,13 @@ strong.italic {
         color: $colorWhite;
         @include transition-mixin('color');
     }
+
+    &__icon,
+    &__tel {
+        &:hover {
+            color: $colorDark;
+        }
+    }
 }
 
 .contacts-new {
@@ -344,6 +362,10 @@ strong.italic {
     &__header_link,
     &__icon {
         color: $colorGrey;
+
+        &:hover {
+            color: $colorRed;
+        }
     }
 
     &__text {
@@ -371,6 +393,10 @@ strong.italic {
     &__header_link {
         color: $colorGrey;
         @include transition-mixin('color');
+
+        &:hover {
+            color: $colorRed;
+        }
     }
 
     &__text {
@@ -410,8 +436,8 @@ strong.italic {
         &_in {
             background-color: $colorWhite;
             border-radius: 6px;
-            max-width: 400px;
-            padding: 12px;
+            max-width: 320px;
+            padding: 4px;
         }
     }
 
@@ -441,12 +467,16 @@ strong.italic {
         &_link {
             color: $colorWhite;
             @include transition-mixin('color');
+
+            &:hover {
+                color: $colorDark;
+            }
         }
     }
 }
 
 .map {
-    height: 560px;
+    height: 400px;
 }
 
 /*** FOOTER ***/
